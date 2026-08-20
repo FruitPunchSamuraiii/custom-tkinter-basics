@@ -15,11 +15,11 @@ class App(customtkinter.CTk):
         self.my_text.pack(pady=20)
 
         self.my_button = customtkinter.CTkButton(self, text="Clear Box", command=self.clear)
-        self.my_button.apck(pady=20)
+        self.my_button.pack(pady=20)
     def clear(self):
         self.my_text.delete(0.0, END) #you can put this anywhere now, but you have to keep it in the class
 
 
 #Create app's main loop after defining it
 app = App()
-App.mainloop()
+app.mainloop()
